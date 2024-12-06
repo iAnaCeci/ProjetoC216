@@ -1,0 +1,232 @@
+{
+	"id": "589d1ac1-3fc2-402d-9baf-90cd2bead3c8",
+	"name": "ProjetoFinal",
+	"timestamp": "2024-12-06T12:47:52.994Z",
+	"collection_id": "29656054-95f010fd-bd02-491b-be83-3d5027fb0cda",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 10,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-12-06T12:47:49.956Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "d471742c-6de8-4493-ab7f-1de310da43d4",
+			"name": "resetar_banco",
+			"url": "http://127.0.0.1:8000/api/v1/tarefas/",
+			"time": 578,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				578
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "6b893c14-d2d8-4b6b-9b5a-4d3d26df7782",
+			"name": "get_tarefas",
+			"url": "http://127.0.0.1:8000/api/v1/tarefas/",
+			"time": 75,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should be a list": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should be a list": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				75
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should be a list": true
+				}
+			]
+		},
+		{
+			"id": "fe2338d4-a6ef-4bed-a188-3af0c9ba7e96",
+			"name": "get_uma_tarefa",
+			"url": "http://127.0.0.1:8000/api/v1/tarefas/2",
+			"time": 107,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response should contain product details": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response should contain product details": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				107
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response should contain product details": true
+				}
+			]
+		},
+		{
+			"id": "556e0d4e-3bf2-41e4-9ccf-e3e22fbcd749",
+			"name": "adicionar_tarefa",
+			"url": "http://127.0.0.1:8000/api/v1/tarefas/",
+			"time": 105,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				105
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "393fe868-d619-4acd-ac0b-4114502c8997",
+			"name": "atualizar_tarefa",
+			"url": "http://127.0.0.1:8000/api/v1/tarefas/3",
+			"time": 83,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				83
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "5fd1b1e8-3d0b-44fa-9bee-d8337a58c75c",
+			"name": "deletar_uma_tarefa",
+			"url": "http://127.0.0.1:8000/api/v1/tarefas/1",
+			"time": 89,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Confirma que o produto foi removido": true,
+				"Produto não encontrado": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Confirma que o produto foi removido": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Produto não encontrado": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				89
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Confirma que o produto foi removido": true,
+					"Produto não encontrado": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1037,
+	"collection": {
+		"requests": [
+			{
+				"id": "d471742c-6de8-4493-ab7f-1de310da43d4",
+				"method": "DELETE"
+			},
+			{
+				"id": "6b893c14-d2d8-4b6b-9b5a-4d3d26df7782",
+				"method": "GET"
+			},
+			{
+				"id": "fe2338d4-a6ef-4bed-a188-3af0c9ba7e96",
+				"method": "GET"
+			},
+			{
+				"id": "556e0d4e-3bf2-41e4-9ccf-e3e22fbcd749",
+				"method": "POST"
+			},
+			{
+				"id": "393fe868-d619-4acd-ac0b-4114502c8997",
+				"method": "PATCH"
+			},
+			{
+				"id": "5fd1b1e8-3d0b-44fa-9bee-d8337a58c75c",
+				"method": "DELETE"
+			}
+		]
+	}
+}
