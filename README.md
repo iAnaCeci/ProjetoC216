@@ -48,5 +48,3 @@ Containerização: Docker e Docker Compose
 
 
 ## Ana Cecília Silveira Fernandes
-## ana.cecilia@gec.inatel.br
-## Matrícula: 1669
